@@ -28,7 +28,7 @@ class EmpresaServiceTest {
 
     @BeforeEach
     @Throws(Exception::class)
-    fun setUP(){
+    fun setUp(){
         BDDMockito.given(empresaRepository?.findByCnpj(CNPJ)).willReturn(empresa())
         BDDMockito.given(empresaRepository?.save(empresa())).willReturn(empresa())
     }

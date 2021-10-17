@@ -10,7 +10,7 @@ class SenhaUtilsTest {
 
     @Test
     fun testeGerarHashSenha() {
-        val hash = SenhaUtils().gerarBcrypt(SENHA)
+        val hash = SenhaUtils().gerarBCrypt(SENHA)
         Assertions.assertTrue(bCryptEncoder.matches(SENHA, hash))
     }
 }
